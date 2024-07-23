@@ -1,4 +1,9 @@
+import React, { useState } from 'react';
 import Logo from '@/components/elements/Logo';
+import Accordion from '../Accordion/Accordion';
+import MenuLinkItem from './MenuLinkItem';
+import BuyersListItems from './BuyersListItems';
+import ContactsListItems from './ContactsListItems';
 import { AllowedLangs } from '@/constants/lang';
 import { setLang } from '@/context/lang';
 import { $menuIsOpen, closeMenu } from '@/context/modals';
@@ -6,14 +11,8 @@ import { useLang } from '@/hooks/useLang';
 import { removeOverflowHiddenFromBody } from '@/lib/utils/common';
 import { useUnit } from 'effector-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useState } from 'react';
-import Accordion from '../Accordion/Accordion';
 import { usePathname } from 'next/navigation';
-import MenuLinkItem from './MenuLinkItem';
-import Link from 'next/link';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
-import BuyersListItems from './BuyersListItems';
-import ContactsListItems from './ContactsListItems';
 
 const Menu = () => {
     

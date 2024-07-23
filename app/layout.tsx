@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import "./globalStyles/globals.css";
 import "./globalStyles/header.css";
 import "./globalStyles/menu.css";
+import "./globalStyles/mobile-navbar.css";
 import Layout from "@/components/layouts/Layout";
 
 
